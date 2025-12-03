@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_04 - To Do List</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Danh sách công việc</h2>
+
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Nhập công việc mới..." />
+        <button onclick="handleAdd()">Thêm</button>
+      </div>
+
+      <div class="filters">
+        <button class="btn-filter active" onclick="filterTasks('all')">
+          Tất cả
+        </button>
+        <button class="btn-filter" onclick="filterTasks('pending')">
+          Chưa xong
+        </button>
+        <button class="btn-filter" onclick="filterTasks('completed')">
+          Đã xong
+        </button>
+      </div>
+
+      <ul id="todoList"></ul>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
