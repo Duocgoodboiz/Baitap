@@ -1,0 +1,80 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2,
+h3 {
+  color: #2c3e50;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #495057;
+}
+
+.completed {
+  color: #28a745;
+  font-weight: bold;
+}
+.pending {
+  color: #ffc107;
+  font-weight: bold;
+}
+.cancelled {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+button {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #5b4cc4;
+}
+
+#reportSection {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.box {
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #6c5ce7;
+}
+
+ul#taxList li {
+  margin-bottom: 5px;
+  color: #555;
+}
