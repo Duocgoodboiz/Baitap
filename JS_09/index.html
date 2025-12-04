@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_09 User Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quản Lý User (Mini App)</h1>
+
+      <div class="main-content">
+        <div class="card form-section">
+          <h2>Thêm User Mới</h2>
+          <form id="userForm">
+            <div class="form-group">
+              <label for="name">Tên hiển thị:</label>
+              <input type="text" id="name" placeholder="Nhập tên..." required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Nhập email..."
+                required
+              />
+            </div>
+            <button type="submit" id="submitBtn">Tạo User</button>
+          </form>
+          <div id="statusMessage"></div>
+        </div>
+
+        <div class="card list-section">
+          <div class="header-list">
+            <h2>Danh sách User</h2>
+            <button id="loadBtn" class="btn-load">Tải danh sách</button>
+          </div>
+
+          <ul id="userList">
+            <li class="empty-msg">Chưa có dữ liệu. Hãy bấm "Tải danh sách".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
