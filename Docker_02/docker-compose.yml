@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: ${CONTAINER_NAME}
+    build: .
+    ports:
+      - "${APP_PORT}:80"
+    networks:
+      - app-network
+  mysql:
+    image: mysql:8
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - app-network
+
+  adminer:
+    image: adminer
+    container_name: adminer-ui
+    ports:
+      - "${ADMINER_PORT}:8080"
+    networks:
+      - app-network
+    depends_on:
+      - mysql
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
