@@ -1,0 +1,20 @@
+{
+  // Gợi ý extension khi mở dự án
+  "recommendations": [
+    // Code Quality & Productivity
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "oderwat.indent-rainbow",
+    "streetsidesoftware.code-spell-checker",
+    // JavaScript & TypeScript
+    "ms-vscode.vscode-typescript-next",
+    "christian-kohler.path-intellisense",
+    "christian-kohler.npm-intellisense",
+    "wix.vscode-import-cost",
+    "gruntfuggly.todo-tree",
+    // Git
+    "eamodio.gitlens"
+  ],
+  "unwantedRecommendations": ["ms-vscode.vscode-typescript-tslint-plugin"]
+}
