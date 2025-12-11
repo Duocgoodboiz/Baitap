@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.step {
+  font-weight: 600;
+  color: #3498db;
+  background: #e1f0fa;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 5px solid transparent;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.25rem;
+  color: #2d3436;
+}
+
+.card .time {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.card .badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  width: fit-content;
+}
+
+.level-beginner {
+  border-left-color: #2ecc71;
+}
+.level-beginner .badge {
+  background-color: #2ecc71;
+}
+
+.level-intermediate {
+  border-left-color: #f39c12;
+}
+.level-intermediate .badge {
+  background-color: #f39c12;
+}
+
+.level-advanced {
+  border-left-color: #e74c3c;
+}
+.level-advanced .badge {
+  background-color: #e74c3c;
+}
+
+.card-featured {
+  grid-column: span 2;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+}
+.card-featured h3,
+.card-featured .time,
+.card-featured .detail {
+  color: white;
+}
+.card-featured .badge {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .card-featured {
+    grid-column: span 1;
+  }
+}
