@@ -1,0 +1,10 @@
+#main-title {
+  color: hsl(240, 100%, 30%);
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: rgb(255, 107, 107);
+  font-weight: bold;
+  text-decoration: underline;
+}

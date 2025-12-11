@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài 6 - Thống kê</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h3>Dữ liệu đơn hàng mẫu</h3>
+
+    <table
+      border="1"
+      cellpadding="5"
+      style="border-collapse: collapse; width: 100%"
+    >
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Khách hàng</th>
+          <th>Tổng tiền</th>
+          <th>Trạng thái</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+
+    <br />
+    <button onclick="thongKe()">Xem Thống Kê</button>
+    <hr />
+
+    <div id="reportSection" style="display: none">
+      <p><b>1. Tổng doanh thu (Completed):</b> <span id="revenue">...</span></p>
+
+      <p><b>2. Số lượng đơn hàng:</b></p>
+      <ul id="countStatus"></ul>
+
+      <p><b>3. Đơn hàng cao nhất:</b> <span id="maxOrder">...</span></p>
+
+      <p><b>4. Danh sách thuế 10% (Completed):</b></p>
+      <ul id="taxList"></ul>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
