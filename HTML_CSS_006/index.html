@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Quản Lý Khóa Học</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <header class="header">
+        <div class="logo">
+          <i class="fa-solid fa-graduation-cap"></i> Dashboard
+        </div>
+        <div class="user-info">
+          <span>Xin chào, Sinh viên</span>
+          <img src="../HTML_CSS_004/img/klop.jpg" alt="Avatar" class="avatar" />
+        </div>
+      </header>
+
+      <aside class="sidebar">
+        <nav class="menu">
+          <a href="#" class="menu-item active"
+            ><i class="fa-solid fa-home"></i> Tổng quan</a
+          >
+          <a href="#" class="menu-item"
+            ><i class="fa-solid fa-book"></i> Khóa học của tôi</a
+          >
+          <a href="#" class="menu-item"
+            ><i class="fa-solid fa-chart-bar"></i> Thống kê</a
+          >
+          <a href="#" class="menu-item"
+            ><i class="fa-solid fa-cog"></i> Cài đặt</a
+          >
+          <a href="#" class="menu-item logout-item"
+            ><i class="fa-solid fa-sign-out-alt"></i> Đăng xuất</a
+          >
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <section class="stats-bar">
+          <div class="stat-card">
+            <h3>Đang học</h3>
+            <p>4 Khóa</p>
+          </div>
+          <div class="stat-card reorder-card">
+            <h3>Hoàn thành</h3>
+            <p>12 Khóa</p>
+          </div>
+          <div class="stat-card">
+            <h3>Chứng chỉ</h3>
+            <p>5</p>
+          </div>
+          <div class="stat-card">
+            <h3>Điểm TB</h3>
+            <p>3.8/4.0</p>
+          </div>
+        </section>
+
+        <section class="courses-grid">
+          <article class="course-card featured">
+            <div class="card-img" style="background-color: #ff7675">
+              Featured
+            </div>
+            <div class="card-content">
+              <h4>Fullstack Web Development (VIP)</h4>
+              <p>Khóa học chuyên sâu dành cho sinh viên năm cuối.</p>
+              <button>Học ngay</button>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="card-img">HTML/CSS</div>
+            <div class="card-content">
+              <h4>HTML5 & CSS3 Cơ bản</h4>
+              <button>Tiếp tục</button>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="card-img">JS</div>
+            <div class="card-content">
+              <h4>JavaScript Nâng cao</h4>
+              <button>Tiếp tục</button>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="card-img">React</div>
+            <div class="card-content">
+              <h4>ReactJS Master</h4>
+              <button>Tiếp tục</button>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="card-img">Node</div>
+            <div class="card-content">
+              <h4>NodeJS Backend</h4>
+              <button>Tiếp tục</button>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>khóa học Fullstack 2025</p>
+      </footer>
+    </div>
+  </body>
+</html>
