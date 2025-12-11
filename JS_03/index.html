@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài 3 - Tính BMI</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h3>Công cụ tính BMI (Chỉ số khối cơ thể)</h3>
+
+    <p>Nhập cân nặng (kg):</p>
+    <input type="number" id="weight" placeholder="VD: 60" />
+
+    <p>Nhập chiều cao (m):</p>
+    <input type="number" id="height" placeholder="VD: 1.7" />
+
+    <br /><br />
+    <button onclick="tinhBMI()">Xem kết quả</button>
+
+    <hr />
+
+    <div>
+      <p>Chỉ số BMI của bạn: <b id="bmiVal">...</b></p>
+      <p>Phân loại: <b id="bmiStatus" style="color: blue">...</b></p>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
